@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Nasi Goreng Ardya</title>
+  <!-- My Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- my style -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar mulai -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">
+      NasGor
+      <span>ARDYA</span>
+    </a>
+
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <!-- Tombol Shopping Cart -->
+      <a href="#" id="shopping-cart">
+        <i data-feather="shopping-cart"></i>
+        <span class="qty-icon">0</span>
+        <!-- Ini adalah elemen yang akan menunjukkan jumlah produk di keranjang -->
+      </a>
+
+      <a href="#" id="hamburger-menu"> <i data-feather="menu"></i></a>
+    </div>
+    <!-- search form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Search Here..." />
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- search form end -->
+    <!-- Shopping cart Start -->
+    <div class="shopping-cart">
+      <div class="cart">
+        <!-- Setiap Cart item akan ditampilkan disini -->
+      </div>
+      <div class="sub-bar">
+        <h3>Total Harga =&nbsp;<span class="total-price"></span></h3>
+      </div>
+      <div class="form-container">
+        <form action="" id="checkout-form">
+          <h5>Customer Detail</h5>
+          <label for="name">
+            <span>Name</span>
+            <input type="text" name="name" id="name" />
+          </label>
+          <label for="addres">
+            <span>Alamat</span>
+            <input type="text" name="alamat" id="addres" />
+          </label>
+          <label for="phone">
+            <span>Nomor Telepon</span>
+            <input type="number" name="phone" id="phone" />
+          </label>
+          <button class="checkout-button" type="submit" id="checkout-button">Chekout</button>
+        </form>
+      </div>
+    </div>
+    <!-- Shopping cart End -->
+  </nav>
+  <!-- Navbar Selesai -->
+
+  <!-- Hero Section start -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>
+        Mari Nikmati Sepiring
+        <span>Nasi Goreng</span>
+      </h1>
+      <p>
+        Mari rasakan kelezatan sepiring nasi goreng yang menggugah selera!
+        Perpaduan bumbu yang kaya dengan nasi yang pulen, ditambah potongan
+        ayam, udang, atau sayuran segar, menciptakan cita rasa yang sempurna.
+        Tak perlu ragu, pesan sekarang dan nikmati kehangatan nasi goreng yang
+        dimasak dengan penuh cinta. Satu gigitan saja akan membuat Anda ingin
+        kembali lagi!
+      </p>
+      <a href="#menu-card" class="cta">Beli sekarang</a>
+    </main>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- About Section start  -->
+  <section id="about" class="about">
+    <h2>
+      <span>Tentang</span>
+      Kami
+    </h2>
+    <div class="row">
+      <div class="about-img">
+        <img src="img/about-img.jpg" alt="Fried Rice ARDYA" />
+      </div>
+      <div class="content">
+        <h3>Kenapa Harus Memilih Kami?</h3>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nasi Goreng Bang Ardya
+          didirikan oleh Ardya Dwicahya pada tanggal 10 Januari 2025. Kami
+          adalah bisnis F&B yang menghadirkan cita rasa khas dan menu spesial
+          untuk pelanggan setia kami. Dengan bahan-bahan pilihan dan resep
+          turun-temurun, kami memastikan setiap hidangan yang kami sajikan
+          selalu memuaskan selera Anda.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Di Nasi Goreng Bang Ardya,
+          kami tidak hanya fokus pada kualitas rasa, tetapi juga pelayanan
+          terbaik bagi setiap pelanggan. Dengan suasana yang ramah dan nyaman,
+          kami ingin setiap orang merasa seperti di rumah sendiri. Kami terus
+          berinovasi menghadirkan menu-menu baru yang unik, namun tetap
+          mempertahankan cita rasa asli yang menjadi ciri khas kami. Setiap
+          piring yang disajikan adalah hasil dari dedikasi dan kecintaan kami
+          terhadap kuliner Nusantara.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--About Section End  -->
+
+  <!-- menu section start -->
+  <section id="menu" class="menu">
+    <h2>
+      <span>Menu</span>
+      Kami
+    </h2>
+    <p>
+      Temukan variasi nasi goreng terbaik yang kami tawarkan! Dengan berbagai
+      pilihan yang menggugah selera, setiap menu kami diracik dengan bumbu
+      spesial untuk menghadirkan cita rasa yang istimewa di setiap suapan.
+      Pilih menu favorit Anda dan nikmati pengalaman kuliner yang tak
+      terlupakan!
+    </p>
+
+    <div id="menu-card" class="row"></div>
+  </section>
+  <!-- menu section end -->
+
+  <!-- Contct Setion Start -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <p>
+      Kami dengan senang hati menjawab pertanyaan dan kebutuhan Anda. Jangan
+      ragu untuk menghubungi kami melalui telepon, email, atau media sosial!
+    </p>
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15854.21303958586!2d106.71585856895709!3d-6.577923342652991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sid!2sid!4v1731767684023!5m2!1sid!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="nama" />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="email" />
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="number" placeholder="no HP" />
+        </div>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Setion End -->
+  <!-- Footer Start -->
+  <footer>
+    <div class="socials">
+      <a href=""><i data-feather="instagram"></i></a>
+      <a href=""><i data-feather="twitter"></i></a>
+      <a href=""><i data-feather="facebook"></i></a>
+    </div>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </div>
+    <div class="credit">
+      <p>Created by <a href="https://ardya107.github.io">@Ardya Dwicahya</a>|&copy;2024</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Modal untuk Detail Produk Start-->
+  <div id="modal-box-1" class="modal-box">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-box-1')">&times; </span>
+      <img src="img/menu/1.jpg" alt="Nasi Goreng" />
+      <div class="product-content">
+        <h2>Nasi Goreng</h2>
+        <p>
+          <span>Deskripsi:</span> Nikmati Nasi Goreng spesial dengan cita rasa
+          autentik yang kaya rempah! Nasi yang dimasak dengan sempurna bersama
+          bumbu pilihan, diolah dengan kecap khas, dan dihidangkan dengan
+          pelengkap seperti kerupuk, telur mata sapi, serta taburan bawang
+          goreng yang menambah kelezatan. Cocok untuk santapan sarapan, makan
+          siang, atau malam..
+        </p>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+        </div>
+        <div class="produt-price">IDR 17k</div>
+        <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal untuk Detail Produk End-->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- my script -->
+  <script src="js/script.js"></script>
+  <script src="./js/products.js" type="module"></script>
+  <script src="./js/menuCard.js" type="module"></script>
+  <script src="./js/checkout.js" type="module"></script>
+</body>
+
+</html>
